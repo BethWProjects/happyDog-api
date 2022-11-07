@@ -7,7 +7,7 @@ app.use(cors());
 
 app.set('port', process.env.PORT || 3001);
 
-app.locals.title = "HappyDog";
+app.locals.title = "Dog Meme Generator";
 
 app.locals.happyDog = [
     {
@@ -52,10 +52,108 @@ app.locals.happyDog = [
       },
 ]
 
+app.locals.sadDog = [
+    {
+        id: 1,
+        image: "",
+      },
+      {
+        id: 2,
+        image: "",
+      },
+      {
+        id: 3,
+        image: "",
+      },
+      {
+        id: 4,
+        image: "",
+      },
+      {
+        id: 5,
+        image: "",
+      },
+      {
+        id: 6,
+        image: "",
+      },
+      {
+        id: 7,
+        image: "",
+      },
+      {
+        id: 8,
+        image: "",
+      },
+      {
+        id: 9,
+        image: "",
+      },
+      {
+        id: 10,
+        image: "",
+      },
+    ]
+
+app.locals.tiredDog = [
+    {
+        id: 1,
+        image: "",
+      },
+      {
+        id: 2,
+        image: "",
+      },
+      {
+        id: 3,
+        image: "",
+      },
+      {
+        id: 4,
+        image: "",
+      },
+      {
+        id: 5,
+        image: "",
+      },
+      {
+        id: 6,
+        image: "",
+      },
+      {
+        id: 7,
+        image: "",
+      },
+      {
+        id: 8,
+        image: "",
+      },
+      {
+        id: 9,
+        image: "",
+      },
+      {
+        id: 10,
+        image: "",
+      },
+    ]    
+
 app.get('/api/v1/happy_dog', (request, response) => {
     const happy = app.locals.happyDog;
 
     response.json({ happy })
+});
+
+app.get('/api/v1/sad_dog', (request, response) => {
+    const sad = app.locals.sadDog;
+
+    response.json({ sad })
+});
+
+app.get('/api/v1/tired_dog', (request, response) => {
+    const tired = app.locals.tiredDog;
+
+    response.json({ tired })
 });
 
 app.listen(app.get('port'), () => {
