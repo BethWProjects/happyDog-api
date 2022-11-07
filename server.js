@@ -52,89 +52,89 @@ app.locals.happyDog = [
       },
 ]
 
-app.locals.sadDog = [
+app.locals.sillyDog = [
     {
         id: 1,
-        image: "",
+        image: "https://st.depositphotos.com/1146092/4811/i/950/depositphotos_48115167-stock-photo-very-funny-dog.jpg",
       },
       {
         id: 2,
-        image: "",
+        image: "https://www.rdasia.com/wp-content/uploads/sites/2/2021/10/15-dog-beanie-GettyImages-114516871-770.jpg",
       },
       {
         id: 3,
-        image: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Silly_Dog_%282277051513%29.jpg",
       },
       {
         id: 4,
-        image: "",
+        image: "https://www.rd.com/wp-content/uploads/2020/11/GettyImages-889552354-e1606774439626.jpg",
       },
       {
         id: 5,
-        image: "",
+        image: "https://st.depositphotos.com/1000423/2642/i/600/depositphotos_26421547-stock-photo-funny-dog-portrait.jpg",
       },
       {
         id: 6,
-        image: "",
+        image: "https://americaware.com/wp-content/uploads/2018/11/Funny_Dog.jpg",
       },
       {
         id: 7,
-        image: "",
+        image: "https://cdn.designbump.com/wp-content/uploads/2014/07/funny-dog-pictures-3.jpg",
       },
       {
         id: 8,
-        image: "",
+        image: "https://www.erblicken.com/wp-content/uploads/2017/10/Funny_Rosa_2.jpg",
       },
       {
         id: 9,
-        image: "",
+        image: "https://www.erblicken.com/wp-content/uploads/2017/10/Funny_Grobi-1.jpg",
       },
       {
         id: 10,
-        image: "",
+        image: "http://www.mypetsname.com/wp-content/uploads/2019/07/Funny-Dog-Names-Feature.jpg",
       },
     ]
 
 app.locals.tiredDog = [
     {
         id: 1,
-        image: "",
+        image: "https://i.pinimg.com/736x/d5/89/64/d58964d9f260412f691098c9d33c0c97.jpg",
       },
       {
         id: 2,
-        image: "",
+        image: "https://www.rd.com/wp-content/uploads/2019/09/shutterstock_626363315-scaled.jpg",
       },
       {
         id: 3,
-        image: "",
+        image: "https://lifeanddogs.com/wp-content/uploads/2019/12/iStock-868098474.jpg",
       },
       {
         id: 4,
-        image: "",
+        image: "https://tractive.com/blog/wp-content/uploads/2021/12/header_image_cat_dog_not_moving-1.jpg",
       },
       {
         id: 5,
-        image: "",
+        image: "https://happydoginstitute.com/wp-content/uploads/2018/01/a-tired-dog-is-a-good-dog.jpg",
       },
       {
         id: 6,
-        image: "",
+        image: "http://2.bp.blogspot.com/-mPvjOS5XeVo/UAhoiGzLZoI/AAAAAAAAbMU/eJpQaT8EHzk/s1600/exhausted%2Bfrenchie.jpg",
       },
       {
         id: 7,
-        image: "",
+        image: "https://www.petcompanionmag.com/wp-content/uploads/2018/01/f00dfbadbd90fac651696d827e76c70a78661545.jpg",
       },
       {
         id: 8,
-        image: "",
+        image: "https://i.pinimg.com/originals/ee/2c/c0/ee2cc0ae0ef22f31487b7b619cbcf17c.jpg",
       },
       {
         id: 9,
-        image: "",
+        image: "https://i.pinimg.com/736x/72/46/8a/72468afd0542afcef9aee7031ca44713.jpg",
       },
       {
         id: 10,
-        image: "",
+        image: "https://i.pinimg.com/originals/79/d0/9b/79d09be444056339432dd9e9dd57c562.jpg",
       },
     ]    
 
@@ -144,10 +144,10 @@ app.get('/api/v1/happy_dog', (request, response) => {
     response.json({ happy })
 });
 
-app.get('/api/v1/sad_dog', (request, response) => {
-    const sad = app.locals.sadDog;
+app.get('/api/v1/silly_dog', (request, response) => {
+    const silly = app.locals.sillyDog;
 
-    response.json({ sad })
+    response.json({ silly })
 });
 
 app.get('/api/v1/tired_dog', (request, response) => {
